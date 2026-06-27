@@ -1,5 +1,10 @@
-0.4.2:
+0.5:
 -----
+* Refactor to avoid error message: `sed s/egrep/grep -E/g`
+* Note that there is already a rewrite of gitflow in Go; git-flow-next: https://git-flow.sh/
+
+0.4.2:
+------
 Release date: **not yet**
 
 * `git flow init` now detects situations where origin already has gitflow
@@ -20,7 +25,7 @@ Release date: **not yet**
 * Add package installer for the Windows platform.
 
 0.4.1:
------
+------
 Release date: **2011/02/04**
 
 * New option `-d` added to `git flow init`, to initialize with defaults without
@@ -34,7 +39,7 @@ Release date: **2011/02/04**
 
 
 0.4:
----
+----
 Release date: **2010/10/18**
 
 * The flag parsing issues of git-flow subcommands are solved for most
