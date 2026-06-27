@@ -1,5 +1,31 @@
-0.4.1:
+0.5:
 -----
+* Refactor to avoid error message: `sed s/egrep/grep -E/g`
+* Note that there is already a rewrite of gitflow in Go; git-flow-next: https://git-flow.sh/
+
+0.4.2:
+------
+Release date: **not yet**
+
+* `git flow init` now detects situations where origin already has gitflow
+  branches set up, and behaves accordingly (thanks Emre Berge Ergenekon).
+
+* `git flow feature finish` can now be called without a feature branch
+  name(prefix) argument and will finish the current branch, if on any.
+
+* `git flow feature pull` now has a `-r` flag, to support `pull --rebase`
+  semantics (thanks Vedang Manerikar).
+
+* Various minor bug fixes related to internal argument passing.
+
+* Improved some documentation.
+
+* Better support for Windows and BSD users.
+
+* Add package installer for the Windows platform.
+
+0.4.1:
+------
 Release date: **2011/02/04**
 
 * New option `-d` added to `git flow init`, to initialize with defaults without
@@ -13,7 +39,7 @@ Release date: **2011/02/04**
 
 
 0.4:
----
+----
 Release date: **2010/10/18**
 
 * The flag parsing issues of git-flow subcommands are solved for most
